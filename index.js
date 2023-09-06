@@ -16,10 +16,10 @@ class Dog extends Animal {
         this.color = color;
     }
     animalSound(){
-        super.animalSound();
+        console.log(this.sound);
         console.log(`Color: ${this.color}`)
     }
-}
-
-const animal1 = new Animal('Dog', 'Woof-woof'); 
-console.log(animal1.animalSound())
+};
+const animal1 = new Dog('Dog', 'Woof-woof', 'Black'); 
+// Dog sound
+animal1.animalSound();
